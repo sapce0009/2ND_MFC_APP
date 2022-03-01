@@ -120,7 +120,8 @@ BOOL CMFCApplication2Dlg::OnInitDialog()
 
 			RECT rect;
 			SetRect(&rect, x, y, x + BUTTON_WIDTH, y + BUTTON_HEIGHT);
-			buttons[i].Create(NULL, WS_CHILD | WS_VISIBLE, rect, this, IDC_BUTTONS + i);
+			buttons[i].Create(NULL, WS_CHILD | WS_VISIBLE | BS_OWNERDRAW, rect, this, IDC_BUTTONS + i);
+			buttons[i].LoadBitmap(IDB_BITMAP1);
 			i++;
 
 		}

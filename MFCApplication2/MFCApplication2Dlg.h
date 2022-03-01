@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "HoverButton.h"
 
 
 // CMFCApplication2Dlg 대화 상자
@@ -32,6 +33,6 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 
-	CButton buttons[4];
+	CHoverButton buttons[4];
 	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);
 };
